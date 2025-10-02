@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "air" # Currently available options are "default", "air"
+site_theme               : "default" # Currently available options are "default", "air"
 title                    : "the hidden heart lab"
 title_separator          : "-"
 name                     : &name "the hidden heart lab"
@@ -104,7 +104,7 @@ comments:
   facebook:
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : "dark" # "light" (default), "dark"
+    colorscheme          : "light" # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "master" # "master", "gh-pages"
