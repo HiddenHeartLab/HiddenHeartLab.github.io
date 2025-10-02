@@ -23,7 +23,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "https://raw.githubusercontent.com/HiddenHeartLab/.github/refs/heads/main/profile/thhl_logo.png"
   name             : "the hidden heart lab"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
