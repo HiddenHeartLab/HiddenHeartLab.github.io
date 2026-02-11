@@ -1,0 +1,11 @@
+---
+title: "Generative hyperelasticity with physics-informed probabilistic diffusion fields"
+collection: publications
+category: manuscripts
+permalink: /publication/2025-01-01-generative-hyperelasticity-with-physicsinformed-probabilisti
+excerpt: ''
+date: 2025-01-01
+venue: 'Engineering with Computers'
+paperurl: 'https://link.springer.com/article/10.1007/s00366-024-01984-2'
+citation: 'Vahidullah Taç and Manuel K Rausch and Ilias Bilionis and Francisco Sahli Costabal and Adrian Buganza Tepole. (2025). &quot;Generative hyperelasticity with physics-informed probabilistic diffusion fields.&quot; <i>Engineering with Computers</i>.'
+---

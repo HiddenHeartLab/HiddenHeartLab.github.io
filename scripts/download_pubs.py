@@ -8,7 +8,7 @@ from scholarly import scholarly, ProxyGenerator
 # pg.FreeProxies()
 # scholarly.use_proxy(pg)
 
-output_dir = "_publications"
+output_dir = "../_publications"
 os.makedirs(output_dir, exist_ok=True)
 
 def generate_slug(title):
@@ -30,33 +30,32 @@ for pub in author['publications']:
     title = pub['bib'].get('title', 'Untitled')
     year = pub['bib'].get('pub_year', '1900')
     slug = generate_slug(title)
-    filename = f"{year}-{slug}.md"
+    
+    # Fix 1: Ensure filename strictly follows YYYY-MM-DD
+    filename = f"{year}-01-01-{slug}.md"
     filepath = os.path.join(output_dir, filename)
 
     if os.path.exists(filepath):
         print(f"Skipping: {filename} (File already exists)")
         continue
 
-    # Fill individual publication details to retrieve full metadata
-    time.sleep(1) # Basic throttle to respect Scholar's rate limits
+    time.sleep(1)
     scholarly.fill(pub)
     bib = pub['bib']
-
-    # Resolve publication venue
-    venue = bib.get('journal', bib.get('conference', bib.get('venue', 'Preprint or Working Paper')))
-    
-    # Resolve URL
+    venue = bib.get('journal', bib.get('conference', bib.get('venue', 'Working Paper')))
     paper_url = pub.get('pub_url', pub.get('eprint_url', ''))
-
-    # Format authors for the citation string
     authors = bib.get('author', 'Unknown Authors')
-    citation_string = f"{authors}. ({year}). \\\"{title}.\\\" <i>{venue}</i>."
+    
+    # Fix 2: Use HTML entities instead of backslash escapes
+    citation_string = f"{authors}. ({year}). &quot;{title}.&quot; <i>{venue}</i>."
 
+    # Fix 3: Match the exact front matter fields expected by the template
     yaml_front_matter = f"""---
 title: "{title}"
 collection: publications
-permalink: /publication/{year}-{slug}
-excerpt: 'This paper is about...'
+category: manuscripts
+permalink: /publication/{year}-01-01-{slug}
+excerpt: ''
 date: {year}-01-01
 venue: '{venue}'
 paperurl: '{paper_url}'
@@ -68,5 +67,6 @@ citation: '{citation_string}'
         f.write(yaml_front_matter)
     
     print(f"Generated: {filename}")
+
 
 print("Sync complete.")
