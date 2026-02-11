@@ -28,7 +28,17 @@ author = scholarly.fill(author, sections=['publications'])
 
 for pub in author['publications']:
     title = pub['bib'].get('title', 'Untitled')
-    year = pub['bib'].get('pub_year', '1900')
+    year_str = pub['bib'].get('pub_year', '0')
+    
+    # Safely convert the year string to an integer
+    try:
+        year = int(year_str)
+    except ValueError:
+        year = 0
+        
+    # Skip any publication prior to 2026
+    if year < 2026:
+        continue
     slug = generate_slug(title)
     
     # Fix 1: Ensure filename strictly follows YYYY-MM-DD
