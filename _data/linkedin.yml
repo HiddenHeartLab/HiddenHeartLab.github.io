@@ -2,20 +2,20 @@
 
 # Fixed typo: changed 'ucgPost' to 'ugcPost'
 - title: "WCCM2026"
-  urn: "urn:li:ugcPost:7414068651240308736"
+  urn: "urn:li:share:7414068651240308736"
   height: 885
 
 - title: "New pre-print"
-  urn: "urn:li:ugcPost:7387151064086626304"
+  urn: "urn:li:share:7387151064086626304"
   height: 897
 
 # Fixed missing prefix: added 'urn:'
 - title: "On the news"
-  urn: "urn:li:ugcPost:7377376727578189824"
+  urn: "urn:li:share:7377376727578189824"
   height: 882
 
 - title: "PhD position"
-  urn: "urn:li:ugcPost:7369722373433880576"
+  urn: "urn:li:share:7369722373433880576"
   height: 762
 
 # Fixed type: changed 'ugcPost' back to 'share' (based on your original iframe)
