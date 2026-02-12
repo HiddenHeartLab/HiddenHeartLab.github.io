@@ -1,55 +1,57 @@
 # _data/linkedin.yml
 
-
+# Fixed typo: changed 'ucgPost' to 'ugcPost'
 - title: "WCCM2026"
-  urn: "urn:li:ucgPost:7414068651240308736"
+  urn: "urn:li:ugcPost:7414068651240308736"
   height: 885
 
-- title: "new pre-print"
+- title: "New pre-print"
   urn: "urn:li:ugcPost:7387151064086626304"
   height: 897
 
-- title: "on the news"
-  urn: "li:ugcPost:7377376727578189824" 
+# Fixed missing prefix: added 'urn:'
+- title: "On the news"
+  urn: "urn:li:ugcPost:7377376727578189824"
   height: 882
 
 - title: "PhD position"
-  urn: "urn:li:ugcPost:7369722373433880576" 
+  urn: "urn:li:ugcPost:7369722373433880576"
   height: 762
 
+# Fixed type: changed 'ugcPost' back to 'share' (based on your original iframe)
 - title: "Latest Update"
-  urn: "urn:li:ugcPost:7423983000826073088"
+  urn: "urn:li:share:7423983000826073088"
   height: 578
 
-- title: ""
-  urn: "urn:li:ugcPost:7345799831262556160"
+# Fixed type: changed 'ugcPost' back to 'share'
+- title: "Recent Share"
+  urn: "urn:li:share:7345799831262556160"
   height: 550
 
-- title: ""
+- title: "UGC Post"
   urn: "urn:li:ugcPost:7338548460050120706"
   height: 548
 
-- title: ""
+- title: "Major Update"
   urn: "urn:li:ugcPost:7321606279813029888"
   height: 863
 
-- title: ""
+- title: "Research Update"
   urn: "urn:li:ugcPost:7190633602953412609"
   height: 548
 
-- title: ""
+- title: "Lab News"
   urn: "urn:li:ugcPost:7260328315943632896"
   height: 548
 
-- title: ""
+- title: "Pinned Post"
   urn: "urn:li:ugcPost:7142513366824120320"
   height: 548
 
-- title: ""
+- title: "Shared Article"
   urn: "urn:li:share:7095395379642261504"
   height: 668
 
-- title: ""
+- title: "Older Update"
   urn: "urn:li:share:6975070500041412610"
   height: 668
-  
