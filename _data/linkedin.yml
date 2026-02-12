@@ -1,5 +1,10 @@
 # _data/linkedin.yml
 
+# Fixed type: changed 'ugcPost' back to 'share' (based on your original iframe)
+- title: "Latest Update"
+  urn: "urn:li:share:7423983000826073088"
+  height: 578
+
 # Fixed typo: changed 'ucgPost' to 'ugcPost'
 - title: "WCCM2026"
   urn: "urn:li:share:7414068651240308736"
@@ -17,11 +22,6 @@
 - title: "PhD position"
   urn: "urn:li:share:7369722373433880576"
   height: 762
-
-# Fixed type: changed 'ugcPost' back to 'share' (based on your original iframe)
-- title: "Latest Update"
-  urn: "urn:li:share:7423983000826073088"
-  height: 578
 
 # Fixed type: changed 'ugcPost' back to 'share'
 - title: "Recent Share"
