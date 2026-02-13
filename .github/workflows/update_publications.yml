@@ -29,6 +29,9 @@ jobs:
 
       - name: Run Scholar scraper
         run: python scripts/download_pubs.py
+        
+      - name: Run Software updater
+        run: python scripts/update_software.py
 
       - name: Commit and push new publications
         uses: stefanzweifel/git-auto-commit-action@v5
