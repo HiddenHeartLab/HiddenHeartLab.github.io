@@ -1,0 +1,48 @@
+- name: purkinje-learning
+  url: https://github.com/HiddenHeartLab/purkinje-learning
+  description: Probabilistic learning of the Purkinje network from the 12 lead ECG
+  stars: 1
+  forks: 0
+  language: Jupyter Notebook
+  updated: '2026-02-13'
+- name: WarpPINN
+  url: https://github.com/HiddenHeartLab/WarpPINN
+  description: computing cardiac strains from cine MRI with physics-informed neural
+    networks
+  stars: 1
+  forks: 0
+  language: Jupyter Notebook
+  updated: '2026-02-13'
+- name: Delta-fibernet
+  url: https://github.com/HiddenHeartLab/Delta-fibernet
+  description: learning fiber orientation in the atria from electroanatomical maps
+    with physics-informed neural networks
+  stars: 1
+  forks: 0
+  language: Jupyter Notebook
+  updated: '2026-02-13'
+- name: reentry-eikonal
+  url: https://github.com/HiddenHeartLab/reentry-eikonal
+  description: Eikonal solver with re-excitability
+  stars: 0
+  forks: 0
+  language: null
+  updated: '2025-11-08'
+- name: logPSD-demo-FIMH
+  url: https://github.com/HiddenHeartLab/logPSD-demo-FIMH
+  description: This is a repository containing code and examples for a log-map-based
+    solver of the complex eikonal equation to initiate reentry on monodomain simulations.
+    The corresponding paper for this method has been submitted for the 13th Functional
+    Imaging and Modeling of the Heart International Conference (FIMH 2025).
+  stars: 0
+  forks: 0
+  language: Jupyter Notebook
+  updated: '2025-10-17'
+- name: FKS-demo
+  url: https://github.com/HiddenHeartLab/FKS-demo
+  description: Example of the fibrotic kernel signature to estimate inducibility in
+    atrial fibrillation simulations
+  stars: 0
+  forks: 0
+  language: Python
+  updated: '2026-02-13'
