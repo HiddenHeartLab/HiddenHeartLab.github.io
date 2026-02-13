@@ -14,8 +14,8 @@ main:
   - title: "publications"
     url: /publications/    
 
-  # - title: "Teaching"
-  #   url: /teaching/    
+  - title: "software"
+    url: /software/    
     
   # - title: "Portfolio"
   #   url: /portfolio/
