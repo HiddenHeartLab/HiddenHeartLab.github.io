@@ -14,6 +14,12 @@ layout: default
   {% endunless %}
 {% endif %}
 
+{% if page.hero_banner %}
+  <div class="hh-banner">
+    <img class="hh-banner__logo" src="https://raw.githubusercontent.com/HiddenHeartLab/.github/refs/heads/main/profile/thhl_logo.png" alt="the hidden heart lab" width="1314" height="663" fetchpriority="high" />
+  </div>
+{% endif %}
+
 <div id="main" role="main">
   {% include sidebar.html %}
 

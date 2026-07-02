@@ -8,7 +8,9 @@ from scholarly import scholarly, ProxyGenerator
 # pg.FreeProxies()
 # scholarly.use_proxy(pg)
 
-output_dir = "../_publications"
+# Resolve relative to this script's location so it works from any CWD
+# (e.g. the CI runs `python scripts/download_pubs.py` from the repo root).
+output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "_publications")
 os.makedirs(output_dir, exist_ok=True)
 
 def generate_slug(title):

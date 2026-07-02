@@ -18,3 +18,9 @@ package-lock.json
 
 # Ignore folders related to IDEs
 .vscode/
+
+# Local gem install and cache used for offline preview builds
+.local_gems/
+.jekyll-cache/
+.DS_Store
+**/.DS_Store

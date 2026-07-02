@@ -12,10 +12,10 @@ main:
     url: /people/
 
   - title: "publications"
-    url: /publications/    
+    url: /publications/
 
   - title: "software"
-    url: /software/    
+    url: /software/
     
   # - title: "Portfolio"
   #   url: /portfolio/
