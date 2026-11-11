@@ -31,10 +31,15 @@ jobs:
         run: python scripts/download_pubs.py
         
       - name: Run Software updater
+        # writes _data/software.yml, which the site pages do not read; a failure here must not stop the rebuild
+        continue-on-error: true
         run: python scripts/update_software.py
+
+      - name: Rebuild the site pages
+        run: python _sitegen/build.py
 
       - name: Commit and push new publications
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto-generate new publications from Google Scholar"
-          file_pattern: _publications/*.md
+          file_pattern: _publications/*.md index.html people/index.html publications/index.html software/index.html news/index.html 404.html

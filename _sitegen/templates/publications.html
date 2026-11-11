@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!--@head-->
+</head>
+<body>
+<!--@bar-->
+<div class="dark">
+  <header class="head"><div class="intro"><h1 class="lines"><span class="line"><span data-line style="--i:0">Publications</span></span></h1><p data-rise style="--i:2">Every publication from <!--@pub_first--> to <!--@pub_last-->, newest first.</p></div></header>
+</div>
+
+<main id="main">
+<div class="tools" role="search">
+  <label class="sr-only" for="q">Search publications</label>
+  <input id="q" name="q" type="search" placeholder="Search titles, authors and journals" autocomplete="off" spellcheck="false" enterkeyhint="search">
+  <div class="kinds" role="group" aria-label="Type of publication">
+    <button type="button" data-k="all" aria-pressed="true">All</button>
+    <button type="button" data-k="journal" aria-pressed="false">Journal articles</button>
+    <button type="button" data-k="preprint" aria-pressed="false">Preprints</button>
+    <button type="button" data-k="chapter" aria-pressed="false">Chapters and proceedings</button>
+  </div>
+  <p class="count" id="count" aria-live="polite"><!--@pub_count--> publications</p>
+</div>
+<nav class="years" aria-label="Years"><!--@year_links--></nav>
+<div id="list">
+<!--@years-->
+</div>
+<p class="empty" id="empty" hidden>No publication matches this search.</p>
+<div style="height:var(--section)"></div>
+</main>
+
+<!--@foot-->
+<script src="/assets/hhl/base.js"></script>
+<script>
+(() => {
+  const q = document.getElementById('q'), btns = [...document.querySelectorAll('.kinds button')];
+  const papers = [...document.querySelectorAll('.paper')], years = [...document.querySelectorAll('.year')];
+  const count = document.getElementById('count'), empty = document.getElementById('empty');
+  const text = papers.map((p) => p.textContent.toLowerCase());
+  let kind = 'all';
+  // the search and the filter are kept in the address (?q=…&type=…), so a filtered list can be bookmarked or sent
+  const at = new URL(location.href).searchParams;
+  if (at.get('q')) q.value = at.get('q');
+  if (btns.some((b) => b.dataset.k === at.get('type'))) { kind = at.get('type'); btns.forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.k === kind))); }
+  function remember() {
+    const u = new URL(location.href), words = q.value.trim();
+    if (words) u.searchParams.set('q', words); else u.searchParams.delete('q');
+    if (kind !== 'all') u.searchParams.set('type', kind); else u.searchParams.delete('type');
+    history.replaceState(null, '', u);
+  }
+  function run() {
+    const terms = q.value.toLowerCase().split(/\s+/).filter(Boolean);
+    let n = 0;
+    papers.forEach((p, i) => {
+      const ok = (kind === 'all' || p.dataset.kind === kind) && terms.every((t) => text[i].includes(t));
+      p.hidden = !ok; if (ok) n++;
+    });
+    years.forEach((y) => { y.hidden = !y.querySelector('.paper:not([hidden])'); });
+    document.querySelectorAll('.years a').forEach((a) => { a.hidden = document.querySelector(a.getAttribute('href')).hidden; });
+    count.textContent = n + (n === 1 ? ' publication' : ' publications');
+    empty.hidden = n > 0;
+  }
+  q.addEventListener('input', () => { run(); remember(); });
+  btns.forEach((b) => b.addEventListener('click', () => { kind = b.dataset.k; btns.forEach((x) => x.setAttribute('aria-pressed', String(x === b))); run(); remember(); }));
+  if (q.value || kind !== 'all') run();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+[
+ {
+  "id": "7423983000826073088",
+  "urn": "urn:li:share:7423983000826073088",
+  "date": "2026-02-02",
+  "actor": "Axel Loewe",
+  "title": "15 fully funded PhD positions within TrackAF",
+  "body": [
+   "Opportunity Alert for Early-Career Researchers & Network Champions!",
+   "We’re thrilled to announce 15 fully funded PhD positions within TrackAF — a new Marie Skłodowska-Curie Doctoral Network focused on advancing research and training in atrial cardiomyopathy and atrial fibrillation. This interdisciplinary programme combines cutting-edge computational modelling, clinical AI, data-driven approaches, and wet lab science to tackle some of the most pressing challenges in cardiovascular health. www.trackaf.eu"
+  ],
+  "img": ""
+ },
+ {
+  "id": "7414068651240308736",
+  "urn": "urn:li:share:7414068651240308736",
+  "date": "2026-01-05",
+  "actor": "Mathias Peirlinck",
+  "title": "A mini symposium on Machine Learning and AI in Constitutive Modeling of Complex Materials",
+  "body": [
+   "Together with Francisco Sahli Costabal, Adrián Buganza, WaiChing Sun, Ellen Kuhl, Jan Niklas Fuhg, Mathias Peirlinck, Sid Kumar, Nikolaos Bouklas, and Nick Vlassis, we are organizing a mini symposium on - Machine Learning and AI in Constitutive Modeling of Complex Materials",
+   "Join us in Munich this coming July to discuss cutting-edge developments at the intersection of machine learning, artificial intelligence, and constitutive modeling — from data-driven multiscale material descriptions to surrogate models and physics-informed architectures."
+  ],
+  "img": ""
+ },
+ {
+  "id": "7387151064086626304",
+  "urn": "urn:li:share:7387151064086626304",
+  "date": "2025-10-23",
+  "actor": "Francisco Sahli Costabal",
+  "title": "New preprint: WarpPINN-fibers, improved cardiac strain estimation from cine-MR with physics-informed neural networks",
+  "body": [
+   "Image Registration with Cardiac Fibers!",
+   "The muscle fibers that constitute cardiac tissue strongly determine the mechanical properties of our hearts. Image registration methods applied to cine-MR can help detect various cardiopathies.",
+   "However, these methods do not account for fiber physiology, restricting their capacity to accurately measure cardiac function. In this work, we developed WarpPINN-fibers: a physics-informed neural network framework that exploits the near-incompressibility of cardiac tissue and minimizes stretch in the direction of fibers to enhance the reconstruction of cardiac motion."
+  ],
+  "img": "media/news/7387151064086626304.webp",
+  "alt": "A left ventricle coloured by fibre stretch"
+ },
+ {
+  "id": "7377376727578189824",
+  "urn": "urn:li:share:7377376727578189824",
+  "date": "2025-09-26",
+  "actor": "Francisco Sahli Costabal",
+  "title": "Yahoo News covers our work on the Purkinje network",
+  "body": [
+   "The idea of this work started about 10 years a go with my first paper as PhD student with Ellen Kuhl. It combines a range of concepts from fractals, PDEs, machine learning, optimization and uncertainty quantification. A long journey that wouldn't have been possible without the collaboration of Simone Pezzuto and the researchers Felipe Álvarez Barrientos Mariana Salinas Camus"
+  ],
+  "img": ""
+ },
+ {
+  "id": "7369722373433880576",
+  "urn": "urn:li:share:7369722373433880576",
+  "date": "2025-09-05",
+  "actor": "Francisco Sahli Costabal",
+  "title": "A joint PhD between King’s College London and Pontificia Universidad Católica de Chile",
+  "body": [
+   "Prof. Adelaide De Vecchi (KCL) and I are seeking for a PhD student for the joint degree between King’s College London and Pontificia Universidad Católica de Chile",
+   "We are seeking talented researchers at the intersection of medical imaging and physics-informed machine learning to characterize the electrical, mechanical and hemodynamic function in the left atrium of the heart."
+  ],
+  "img": "media/news/7369722373433880576.jpg",
+  "alt": "Three panels: anatomy and mechanics, electrophysiology from ECG, hemodynamics"
+ },
+ {
+  "id": "7345799831262556160",
+  "urn": "urn:li:share:7345799831262556160",
+  "date": "2025-07-01",
+  "actor": "Francisco Sahli Costabal",
+  "title": "New paper: A Fast Solver for the Complex Eikonal Equation to Initiate Cardiac Arrhythmias",
+  "body": [
+   "Complex events of arrhythmia are described by multiple spiral waves that are computationally expensive to generate.",
+   "Differential geometry can help us with that! We developed a method that solves the complex eikonal equation on the plane and morphs it to the shape of the atria. Our method allows to initiate simulations of atrial fibrillation with stable sources of reentry."
+  ],
+  "img": "media/news/7345799831262556160.webp",
+  "alt": "Spiral waves started by the complex eikonal solver"
+ },
+ {
+  "id": "7338548460050120706",
+  "urn": "urn:li:ugcPost:7338548460050120706",
+  "date": "2025-06-11",
+  "actor": "Simone Pezzuto",
+  "title": "New paper: Accurate and efficient cardiac digital twin from surface ECGs",
+  "body": [
+   "We present a fast and interpretable cardiac digital twin approach that infers plausible representations of the ventricular conduction system directly from surface ECGs, even in the challenging case of sinus activation, with hundreds of activation sites!"
+  ],
+  "img": ""
+ },
+ {
+  "id": "7321606279813029888",
+  "urn": "urn:li:ugcPost:7321606279813029888",
+  "date": "2025-04-25",
+  "actor": "Francisco Sahli Costabal",
+  "title": "A not so digital twin of the heart",
+  "body": [
+   "We took the results of our heart tracking algorithm (WarpPINN) and we put them back to life.",
+   "This is the left ventricle of a volunteer beating in real time on a scale 1:1. We took the cine MRI, tracked it with WarpPINN and we 3D printed the deformed models."
+  ],
+  "img": "media/news/7321606279813029888.jpg",
+  "alt": "Red models of a heart on stands"
+ },
+ {
+  "id": "7260328315943632896",
+  "urn": "urn:li:ugcPost:7260328315943632896",
+  "date": "2024-11-07",
+  "actor": "Francisco Sahli Costabal",
+  "title": "New paper: Simulation-free prediction of atrial fibrillation inducibility with the fibrotic kernel signature",
+  "body": [
+   "Tired of waiting for your AF simulations to finish?",
+   "We have a solution! We created a set of features to predict whether a simulation will induce or not AF in a fraction of the time. It is based on the idea of the heat kernel signature, but adapted to include fiber orientation and fibrosis."
+  ],
+  "img": "media/news/7260328315943632896.jpg",
+  "alt": "Overview of the fibrotic kernel signature method"
+ },
+ {
+  "id": "7190633602953412609",
+  "urn": "urn:li:ugcPost:7190633602953412609",
+  "date": "2024-04-29",
+  "actor": "Simone Pezzuto",
+  "title": "Where’s the scar?",
+  "body": [
+   "Let's take a look at the displacement and then make a guess!",
+   "We solve an inverse problem to reconstruct the local contractility of the cardiac tissue from displacement data. It works well even when the data is limited to the boundary!",
+   "Great work by Giulia Pozzi and Davide Ambrosi from PoliTO!"
+  ],
+  "img": "media/news/7190633602953412609.jpg",
+  "alt": "A purple gridded sheet, slightly deformed, labelled “Scar ?”"
+ },
+ {
+  "id": "7142513366824120320",
+  "urn": "urn:li:ugcPost:7142513366824120320",
+  "date": "2023-12-18",
+  "actor": "Simone Pezzuto",
+  "title": "New preprint: Probabilistic learning of the Purkinje network from the electrocardiogram",
+  "body": [
+   "We identify potential representations of the cardiac conduction system that explain patient's electrocardiogram with and without pathologies."
+  ],
+  "img": "media/news/7142513366824120320.jpg",
+  "alt": "A learned Purkinje network and its ECG"
+ },
+ {
+  "id": "7095395379642261504",
+  "urn": "urn:li:share:7095395379642261504",
+  "date": "2023-08-10",
+  "actor": "Francisco Sahli Costabal",
+  "title": "New preprint: Unsupervised reconstruction of cardiac cine MRI using Neural Fields",
+  "body": [
+   "We reconstruct dynamic images of the heart with fully connected neural networks using only a fraction of the data, reducing acquisition times"
+  ],
+  "img": "media/news/7095395379642261504.webp",
+  "alt": "Cine MRI reconstructed with neural fields"
+ },
+ {
+  "id": "6975070500041412610",
+  "urn": "urn:li:share:6975070500041412610",
+  "date": "2022-09-12",
+  "actor": "Francisco Sahli Costabal",
+  "title": "New preprint: Δ-PINNs, physics-informed neural networks on complex geometries",
+  "body": [
+   "We encode the domain using the Laplacian eigenfuctions, then we solve forward and inverse problems on any geometry, like geodesics on a bunny!"
+  ],
+  "img": ""
+ }
+]
