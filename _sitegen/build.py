@@ -223,10 +223,12 @@ def content():
         f'<span class="t">{E(n["title"])}</span><span class="by">Posted by {E(n["actor"])}</span></a>{post_fig(n)}</li>'
         for n in news[:5])
 
-    # the two groups under the banner: the PI's name (to their page) and the university
+    # the two groups under the banner: the PI's name (to their page), the university and its logo
     out['pis'] = '\n'.join(
-        f'    <li><a class="pi" href="{PI_LINKS[n]}">{E(n)}</a><span class="inst">{E(u)}</span></li>'
-        for n, u in [('Francisco Sahli Costabal', 'Pontificia Universidad Católica de Chile'), ('Simone Pezzuto', 'University of Trento')])
+        f'    <li><a class="pi" href="{PI_LINKS[n]}">{E(n)}</a><span class="inst">{E(u)}</span>'
+        f'<a class="pi-uni" href="{h}">{img(logo, u)}</a></li>'
+        for n, u, h, logo in [('Francisco Sahli Costabal', 'Pontificia Universidad Católica de Chile', 'https://www.uc.cl/', 'media/logos/uc.svg'),
+                              ('Simone Pezzuto', 'University of Trento', 'https://www.unitn.it/en', 'media/logos/unitn.svg')])
 
     rows, shown = [], 0
     for p in pubs[:6]:

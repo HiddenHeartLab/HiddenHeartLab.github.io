@@ -148,6 +148,9 @@ html { scroll-padding-top: var(--bar-h); }
 .pis li + li { border-left: 2px solid var(--black); }
 .pi { font-family: var(--font-display); font-weight: 700; font-size: var(--step-lead); letter-spacing: -0.02em; line-height: 1.05; text-decoration: none; }
 .inst { margin-top: 10px; font-size: var(--step-small); color: var(--muted); }
+.pi-uni { display: block; margin-top: 24px; }
+.pi-uni img { height: 56px; width: auto; background: none; }
+.pi-uni img[src$="uc.svg"] { height: 72px; margin-top: -8px; }
 @media (hover: hover) and (pointer: fine) { .pi:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; } }
 .mission { max-width: 52ch; text-wrap: balance; margin: 72px auto 0; font-family: var(--font-display); font-weight: 700; font-size: clamp(1.5rem, 1rem + 1.4vw, 2.25rem); letter-spacing: -0.025em; line-height: 1.08; }
 
