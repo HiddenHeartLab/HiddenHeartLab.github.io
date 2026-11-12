@@ -73,7 +73,9 @@ RESEARCH = [
 
 LINKEDIN = 'https://www.linkedin.com/feed/update/'
 GITHUB = 'https://github.com/HiddenHeartLab/'
-SUB = 'Francisco Sahli Costabal’s group in Santiago and Simone Pezzuto’s group in Trento. We build models of the heart from ECG and MRI data.'
+# the meta description of the home page (not shown on the page)
+SUB = ('The hidden heart lab, the research groups of Francisco Sahli Costabal at the Pontificia Universidad Católica de Chile '
+       'and Simone Pezzuto at the University of Trento.')
 MISSION = 'Our mission is to unveil the cardiac structure and function from affordable and non-invasive data.'
 
 

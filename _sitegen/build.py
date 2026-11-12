@@ -206,7 +206,7 @@ def parts(page, desc):
         '    <p class="foot-links"><a href="/people/">People</a><a href="/publications/">Publications</a><a href="/software/">Software</a><a href="/news/">News</a><a href="https://github.com/HiddenHeartLab">GitHub</a></p>',
         '  </div>',
         '</footer>'])
-    return {'head': '\n'.join(head), 'bar': bar, 'foot': foot, 'sub': E(SUB), 'mission': E(MISSION), 'heart_d': HEART_D}
+    return {'head': '\n'.join(head), 'bar': bar, 'foot': foot, 'mission': E(MISSION), 'heart_d': HEART_D}
 
 
 def content():
@@ -217,9 +217,16 @@ def content():
     out['news_since'] = nice_date(news[-1]['date'], False)
     out['pub_count'] = str(len(pubs))
     out['pub_first'], out['pub_last'] = min(years_all), max(years_all)
-    out['facts'] = '\n'.join(
-        f'    <a class="fact" href="/news/#post-{n["id"]}">'
-        f'<b>{nice_date(n["date"], False)}</b><span>{E(n["title"])}</span></a>' for n in news[:4])
+    # the five latest posts, each with its picture or video beside it
+    out['latest'] = '\n'.join(
+        f'    <li class="nrow"><a href="/news/#post-{n["id"]}"><span class="when">{nice_date(n["date"])}</span>'
+        f'<span class="t">{E(n["title"])}</span><span class="by">Posted by {E(n["actor"])}</span></a>{post_fig(n)}</li>'
+        for n in news[:5])
+
+    # the two groups under the banner: the PI's name (to their page) and the university
+    out['pis'] = '\n'.join(
+        f'    <li><a class="pi" href="{PI_LINKS[n]}">{E(n)}</a><span class="inst">{E(u)}</span></li>'
+        for n, u in [('Francisco Sahli Costabal', 'Pontificia Universidad Católica de Chile'), ('Simone Pezzuto', 'University of Trento')])
 
     rows, shown = [], 0
     for p in pubs[:6]:
