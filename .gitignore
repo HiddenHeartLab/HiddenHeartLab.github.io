@@ -24,3 +24,8 @@ package-lock.json
 .jekyll-cache/
 .DS_Store
 **/.DS_Store
+
+# Local tool output (browser screenshots, design-skill working files)
+.playwright-mcp/
+.taste-skill/
+__pycache__/
