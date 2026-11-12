@@ -141,7 +141,7 @@ html { scroll-padding-top: var(--bar-h); }
 .banner-logo { display: block; width: 100%; height: auto; background: none; transform-origin: 0 0; }
 /* the lab's mission, centred under the banner as on the earlier site */
 /* under the banner, on a grey band: the two groups side by side, then the mission in the logo's typeface */
-.intro { background: var(--grey); padding: 88px var(--margin) 96px; text-align: center; }
+.lab-intro { background: var(--grey); padding: 88px var(--margin) 96px; text-align: center; }
 .collab { margin: 0 auto; font-size: var(--step-body); }
 .pis { list-style: none; margin: 40px auto 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; max-width: 980px; }
 .pis li { display: flex; flex-direction: column; align-items: center; padding: 0 clamp(16px, 3vw, 48px); }
@@ -344,7 +344,7 @@ figure > .motion { margin-top: 8px; }
   .banner-title { width: 74%; }
   .banner-media { position: static; order: 1; width: 92%; margin-top: 16px; overflow: visible; }
   .banner video { position: static; transform: none; width: 100%; height: auto; }
-  .intro { padding: 56px 16px 64px; }
+  .lab-intro { padding: 56px 16px 64px; }
   .pis { grid-template-columns: 1fr; row-gap: 32px; margin-top: 32px; }
   .pis li + li { border-left: 0; }
   .mission { font-size: 20px; margin-top: 48px; }
